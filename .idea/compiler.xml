@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="apigateway" />
+        <module name="authenticationService" />
+        <module name="customer-service" />
+        <module name="notificationService" />
+        <module name="auditLogService" />
+        <module name="ServiceRegistry" />
+        <module name="account-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account-service" target="17" />
+      <module name="accountService" target="17" />
+      <module name="apigateway" target="17" />
+      <module name="auditLogService" target="17" />
+      <module name="authentication-service" target="17" />
+      <module name="authenticationService" target="17" />
+      <module name="ConfigServer" target="17" />
+      <module name="customer-service" target="17" />
+      <module name="Department" target="17" />
+      <module name="notificationService" target="17" />
+      <module name="policyGeneration" target="17" />
+      <module name="policySelection" target="17" />
+      <module name="policyService" target="17" />
+      <module name="ServiceRegistry" target="17" />
+      <module name="transactionService" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ConfigServer" options="-parameters" />
+      <module name="Department" options="-parameters" />
+      <module name="ServiceRegistry" options="-parameters" />
+      <module name="account-service" options="-parameters" />
+      <module name="accountService" options="-parameters" />
+      <module name="apigateway" options="-parameters" />
+      <module name="auditLogService" options="-parameters" />
+      <module name="authentication-service" options="-parameters" />
+      <module name="authenticationService" options="-parameters" />
+      <module name="customer-service" options="-parameters" />
+      <module name="notificationService" options="-parameters" />
+      <module name="policyGeneration" options="-parameters" />
+      <module name="policySelection" options="-parameters" />
+      <module name="policyService" options="-parameters" />
+      <module name="transactionService" options="-parameters" />
+    </option>
+  </component>
+</project>
