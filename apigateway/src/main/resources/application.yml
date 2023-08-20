@@ -1,0 +1,58 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: API-GATEWAY
+
+
+  cloud:
+    gateway:
+      routes:
+
+        - id: NOTIFICATION-SERVICE
+          uri: lb://NOTIFICATION-SERVICE
+          predicates:
+            - Path= /notification/**
+
+        - id: AUTH-SERVICE
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path= /autenticate/**
+
+        - id: CUSTOMER-SERVICE
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path= /customers/**
+
+        - id: ACCOUNT-SERVICE
+          uri: lb://ACCOUNT-SERVICE
+          predicates:
+            - Path= /accounts/**
+
+        - id: LOG-SERVICE
+          uri: lb://LOG-SERVICE
+          predicates:
+            - Path= /audit/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    health:
+      shows-details: always
+  metrics:
+    tags:
+      application: API-GATEWAY
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+
