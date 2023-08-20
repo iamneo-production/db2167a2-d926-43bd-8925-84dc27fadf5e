@@ -614,3 +614,49 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
 2023-08-20T13:18:25.106+05:30  INFO 2756 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-08-20T17:17:51.232Z  INFO 4598 --- [main] c.a.AuditLogServiceApplication           : Starting AuditLogServiceApplication using Java 17.0.7 with PID 4598 (/home/coder/project/workspace/auditLogService/target/classes started by coder in /home/coder/project/workspace)
+2023-08-20T17:17:51.254Z  INFO 4598 --- [main] c.a.AuditLogServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-08-20T17:17:52.729Z  INFO 4598 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-20T17:17:53.004Z  INFO 4598 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 265 ms. Found 1 JPA repository interfaces.
+2023-08-20T17:17:53.319Z  INFO 4598 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=33a86900-1882-3985-90f0-83dc277e6f2f
+2023-08-20T17:17:53.841Z  INFO 4598 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-08-20T17:17:53.851Z  INFO 4598 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-20T17:17:53.852Z  INFO 4598 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-20T17:17:53.975Z  INFO 4598 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-20T17:17:53.976Z  INFO 4598 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2613 ms
+2023-08-20T17:17:54.183Z  INFO 4598 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-20T17:17:54.226Z  INFO 4598 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-20T17:17:54.229Z  INFO 4598 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-20T17:17:54.374Z  INFO 4598 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-20T17:17:54.496Z  INFO 4598 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-20T17:17:54.512Z  INFO 4598 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-20T17:17:54.703Z  INFO 4598 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fbd5e0
+2023-08-20T17:17:54.723Z  INFO 4598 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-20T17:17:54.769Z  WARN 4598 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-20T17:17:54.969Z  INFO 4598 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-20T17:17:56.583Z  INFO 4598 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-20T17:17:56.769Z  INFO 4598 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-20T17:17:57.392Z  WARN 4598 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-20T17:17:59.393Z  INFO 4598 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-08-20T17:17:59.663Z  WARN 4598 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-20T17:17:59.759Z  INFO 4598 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-08-20T17:17:59.973Z  INFO 4598 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-08-20T17:17:59.980Z  INFO 4598 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-20T17:18:00.060Z  INFO 4598 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-08-20T17:18:00.061Z  INFO 4598 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-08-20T17:18:00.061Z  INFO 4598 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-08-20T17:18:00.061Z  INFO 4598 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-08-20T17:18:00.061Z  INFO 4598 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-08-20T17:18:00.061Z  INFO 4598 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-08-20T17:18:00.061Z  INFO 4598 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-08-20T17:18:01.315Z  INFO 4598 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-08-20T17:18:01.356Z  INFO 4598 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-08-20T17:18:01.359Z  INFO 4598 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-08-20T17:18:01.364Z  INFO 4598 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1692551881363 with initial instances count: 3
+2023-08-20T17:18:01.367Z  INFO 4598 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application LOG-SERVICE with eureka with status UP
+2023-08-20T17:18:01.368Z  INFO 4598 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1692551881368, current=UP, previous=STARTING]
+2023-08-20T17:18:01.370Z  INFO 4598 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOG-SERVICE/ccfbbcfcedfcbacfbbcfbbaeeafdcddadffefaad-0.ccfbbcfcedfcbacfbbcfbbaeeafdcddadffefaad.che.svc.cluster.local:LOG-SERVICE:8086: registering service...
+2023-08-20T17:18:01.391Z  INFO 4598 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-08-20T17:18:01.392Z  INFO 4598 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2023-08-20T17:18:01.464Z  INFO 4598 --- [main] c.a.AuditLogServiceApplication           : Started AuditLogServiceApplication in 10.901 seconds (process running for 11.644)
+2023-08-20T17:18:01.558Z  INFO 4598 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOG-SERVICE/ccfbbcfcedfcbacfbbcfbbaeeafdcddadffefaad-0.ccfbbcfcedfcbacfbbcfbbaeeafdcddadffefaad.che.svc.cluster.local:LOG-SERVICE:8086 - registration status: 204
